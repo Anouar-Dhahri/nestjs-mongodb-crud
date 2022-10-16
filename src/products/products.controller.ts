@@ -26,7 +26,7 @@ export class ProductsController {
     return this.productService.Update(id, productDto)
   }
 
-  @Delete('id')
+  @Delete('/:id')
   async Delete(@Param('id') id:String) {
     return this.productService.Delete(id)
   }
