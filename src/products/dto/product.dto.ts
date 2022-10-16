@@ -1,9 +1,9 @@
 import { IsNotEmpty } from 'class-validator'
 export class ProductDto {
     @IsNotEmpty()
-    title: String;
+    readonly title: String;
     @IsNotEmpty()
-    description: String;
+    readonly description: String;
     @IsNotEmpty()
-    price: Number;
+    readonly price: Number;
 }
